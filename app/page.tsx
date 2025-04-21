@@ -14,7 +14,7 @@ export default function Home() {
       try {
         const data = await fetchCourses();
         setCourses(data);
-      } catch (err) {
+      } catch {
         setError("Failed to fetch courses. Please try again later.");
       } finally {
         setLoading(false);
