@@ -40,7 +40,7 @@ export default function Home() {
         id: crypto.randomUUID(),
       });
       setCourses([...courses, newCourse]);
-    } catch (err) {
+    } catch {
       setError("Failed to add course. Please try again.");
     }
   };
